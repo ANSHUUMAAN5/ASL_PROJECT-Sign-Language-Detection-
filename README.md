@@ -107,7 +107,7 @@ Space	Add space
 D	Delete last character
 Q	Quit
 
-📸 Capture Your Own Hand Images (optional)
+## 📸 Capture Your Own Hand Images (optional)
 python3 scripts/capture_images.py
 
 
@@ -115,11 +115,11 @@ Images are saved to:
 
 data/asl_dataset/<letter>/
 
-🎓 Retrain Model (optional)
+## 🎓 Retrain Model (optional)
 python3 scripts/train.py
 
 
-👤 Author
+# 👤 Author
 
 Anshuman Mathur
 B.Tech CSE | AI & ML Enthusiast
