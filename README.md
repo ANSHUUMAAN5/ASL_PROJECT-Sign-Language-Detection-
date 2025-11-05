@@ -28,28 +28,34 @@ Input | Laptop Webcam
 
 ---
 
+✅ Replace ONLY the Folder Structure part with this:
 ## 📂 Project Folder Structure
 
 
 
 ASL_PROJECT/
+│
 ├── models/
 │ ├── asl_model.h5
 │ └── labels.json
+│
 ├── scripts/
 │ ├── realtime.py
 │ ├── capture_images.py
 │ └── train.py
+│
 ├── requirements.txt
 └── README.md
 
 
-> ⚠️ **You MUST create dataset folder manually**
+> ⚠️ YOU MUST create this dataset folder manually:
 
 
 
 ASL_PROJECT/data/asl_dataset/
 
+
+---
 
 Inside `asl_dataset`, you must have:
 
