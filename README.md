@@ -1,164 +1,139 @@
-✅ COPY FROM BELOW AND REPLACE YOUR README
-# ✋ Real-Time Sign Language Detection (A–Z & 0–9)
 
-This project detects **American Sign Language (ASL)** hand signs (A–Z & 0–9) in **real-time** using your laptop webcam and converts them into text.
+✋ Real-Time Sign Language Detection (A–Z & 0–9) | Deep Learning + Computer Vision
 
-Made by **Anshuman Mathur**  
-B.Tech CSE | AI & ML Enthusiast
+Detect American Sign Language (ASL) A–Z alphabets & 0–9 digits in real-time using webcam.
+The system recognizes hand gestures and converts them into text live.
 
----
+Built by **Anshuman Mathur** (B.Tech CSE | AI & ML Enthusiast)
 
-## 🎥 Demo Preview (What it Does)
+─────────────────────────────────────────
+🎯 Demo — How It Works
+─────────────────────────────────────────
+• Show hand sign to webcam ✋  
+• AI predicts the sign 🤖  
+• Text appears live ⌨️  
+• SPACE key builds words
 
-- You show a hand sign in front of webcam
-- The system recognizes the sign
-- Converts it into text
-- You can build words using SPACE & DELETE
+Works on Mac & Windows laptops.
 
-Perfect for learning ASL & building real-time AI apps!
+─────────────────────────────────────────
+🚀 Features
+─────────────────────────────────────────
+• Real-time ASL Detection  
+• 36 classes (A–Z & 0–9)  
+• MobileNetV2 (Transfer Learning)  
+• Kaggle + Custom Dataset  
+• MediaPipe + OpenCV  
+• Trainable with your own images  
+• Mac (M1/M2/M3) & Windows support
 
----
+─────────────────────────────────────────
+🧠 Tech Stack
+─────────────────────────────────────────
+Python 3.10  
+TensorFlow / TensorFlow‑Metal  
+OpenCV  
+MediaPipe  
+MobileNetV2
 
-## 🧠 Tech Used
-
-| Component | Tech |
-|---|---|
-Model | MobileNetV2 (Transfer Learning)
-Framework | TensorFlow (TensorFlow-Metal on M-series Mac)
-Camera Processing | OpenCV
-Hand Tracking | MediaPipe
-Language | Python 3.10
-
----
-
-## ✨ Features
-
-✅ Recognizes **A–Z** and **0–9**  
-✅ Works in **real time**  
-✅ Webcam input  
-✅ Includes **custom dataset collected by me**  
-✅ Train model yourself (optional)  
-✅ Works on **Mac & Windows**
-
----
-
-## 📁 Project Folder Structure
-
-
-
+─────────────────────────────────────────
+📁 Folder Structure
+─────────────────────────────────────────
 ASL_PROJECT/
 │
 ├── models/
-│ ├── asl_model.h5 → Trained model
-│ └── labels.json → Class labels (A-Z, 0-9)
-│
+│   ├── asl_model.h5
+│   └── labels.json
 ├── scripts/
-│ ├── realtime.py → Run real-time detection
-│ ├── capture_images.py → Capture your own training images
-│ └── train.py → Train the model
-│
+│   ├── realtime.py
+│   ├── capture_images.py
+│   └── train.py
 ├── requirements.txt
 └── README.md
 
-
-> ⚠️ You MUST create dataset folder manually!
-
-The required directory:
-
-
+─────────────────────────────────────────
+📂 Dataset Required
+─────────────────────────────────────────
+Create folder manually:
 
 ASL_PROJECT/data/asl_dataset/
 
+Inside → subfolders:
+a/ b/ … z/ and 0/ 1/ … 9/
 
-And inside that folder, you must have:
+─────────────────────────────────────────
+📥 Dataset Download
+─────────────────────────────────────────
+Google Drive Link: (paste your link here)
 
+Steps:  
+1) Download ZIP  
+2) Extract → get `asl_dataset`  
+3) Create `ASL_PROJECT/data/`  
+4) Put `asl_dataset` inside it
 
-
-a/ b/ c/ ... z/
-0/ 1/ ... 9/
-
-
----
-
-## 📥 Download Dataset (Required)
-
-Google Drive link to dataset 👇  
-👉 **(Insert your Google Drive link here)**
-
-### Steps
-
-1. Download the dataset ZIP
-2. Unzip — you will get folder `asl_dataset`
-3. Create folder: `ASL_PROJECT/data/`
-4. Move `asl_dataset` inside it
-
-✅ Final path must look like:
-
-
-
+Final path:
 ASL_PROJECT/data/asl_dataset/
 
+─────────────────────────────────────────
+⚙️ Installation Guide
+─────────────────────────────────────────
 
----
-
-## ⚙️ Installation Guide
-
-### 🖥️ Mac (Intel / M1 / M2 / M3)
-
-```bash
+🍏 Mac (Intel/M1/M2/M3)
+----------------------------------
 cd ASL_PROJECT
 pip3 install -r requirements.txt
 
-
-Mac M1/M2/M3 users only — enable GPU:
-
+For M-series GPU acceleration:
 pip3 install tensorflow-macos tensorflow-metal
 
-## 🪟 Windows Setup
+🪟 Windows
+----------------------------------
 cd ASL_PROJECT
 pip install -r requirements.txt
 
+✅ Use Python 3.10
 
-✅ Use Python 3.10 (MediaPipe works best)
-
-▶️ Run Real-Time Sign Detection
+─────────────────────────────────────────
+🎬 Run Real-Time Detection
+─────────────────────────────────────────
 python3 scripts/realtime.py
 
-Controls
-Key	Action
-SPACE	Adds space (word separator)
-D	Deletes last character
-Q	Quit Program
-📸 Capture Your Own Training Images (Optional)
+Controls:
+SPACE = Add space  
+D = Delete char  
+Q = Quit
+
+─────────────────────────────────────────
+📸 Capture Training Images (optional)
+─────────────────────────────────────────
 python3 scripts/capture_images.py
 
-
-Images will save to:
-
+Saves to:
 data/asl_dataset/<letter>/
 
-🏋️ Train the Model (Optional)
+─────────────────────────────────────────
+🏋️ Retrain Model (optional)
+─────────────────────────────────────────
 python3 scripts/train.py
 
-🚀 Future Plans
+─────────────────────────────────────────
+🚀 Future Enhancements
+─────────────────────────────────────────
+• Full sentence formation  
+• Voice output (TTS)  
+• Web & Mobile App  
+• Multi‑user sign recognition  
+• Bigger dataset
 
-Live voice output (speech)
-
-Full ASL sentence recognition
-
-Web UI / Mobile App
-
-Multi-person sign recognition
-
-Larger dataset
-
-🤝 Contributions
-
-Pull requests welcome — improve accuracy, UI, or add features!
-
+─────────────────────────────────────────
 👤 Author
+─────────────────────────────────────────
+**Anshuman Mathur**  
+B.Tech CSE | Bennett University  
+AI & ML | Deep Learning
 
-Anshuman Mathur
-B.Tech CSE | AI & ML Enthusiast
+LinkedIn: (add your link)  
+GitHub: (your repo)
 
-💼 LinkedIn: (add link here)
+⭐ Please star the repository if you like it!
