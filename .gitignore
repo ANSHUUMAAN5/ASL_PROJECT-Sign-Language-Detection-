@@ -1,0 +1,28 @@
+# OS / editor
+.DS_Store
+.vscode/*
+!.vscode/settings.json
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Envs
+.venv/
+venv/
+env/
+
+# Data (DO NOT PUSH)
+data/asl_dataset/
+data/**/*.zip
+
+# Videos
+*.mp4
+*.avi
+*.mov
+
+# Jupyter
+.ipynb_checkpoints/
+
