@@ -7,7 +7,7 @@ The system recognizes hand gestures and converts them into text live.
 Built by **Anshuman Mathur** (B.Tech CSE | AI & ML Enthusiast)
 
 ─────────────────────────────────────────
-🎯 Demo — How It Works
+## 🎯 Demo — How It Works
 ─────────────────────────────────────────
 • Show hand sign to webcam ✋  
 • AI predicts the sign 🤖  
@@ -17,7 +17,7 @@ Built by **Anshuman Mathur** (B.Tech CSE | AI & ML Enthusiast)
 Works on Mac & Windows laptops.
 
 ─────────────────────────────────────────
-🚀 Features
+## 🚀 Features
 ─────────────────────────────────────────
 • Real-time ASL Detection  
 • 36 classes (A–Z & 0–9)  
