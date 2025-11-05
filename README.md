@@ -1,4 +1,4 @@
-# Sign Language Detection (A–Z, 0–9) — Real-Time | Deep Learning
+# ✌️ Sign Language Detection (A–Z, 0–9) — Real-Time | Deep Learning
 
 A real-time Sign Language recognition system that detects **A–Z alphabets and 0–9 digits** from a webcam and converts them into text.
 
@@ -29,6 +29,9 @@ Input | Laptop Webcam
 ---
 
 ## 📂 Project Folder Structure
+
+
+
 ASL_PROJECT/
 ├── models/
 │ ├── asl_model.h5
@@ -44,11 +47,15 @@ ASL_PROJECT/
 > ⚠️ **You MUST create dataset folder manually**
 
 
+
+ASL_PROJECT/data/asl_dataset/
+
+
 Inside `asl_dataset`, you must have:
 
+
+
 a/ b/ c/ ... z/ 0/ 1/ ... 9/
-
-
 ---
 
 ## 📥 Download Dataset
@@ -84,8 +91,9 @@ pip3 install tensorflow-macos tensorflow-metal
 ```
 
 ### 🪟 Windows
-cd ASL_PROJECT
+``` cd ASL_PROJECT
 pip install -r requirements.txt
+```
 
 
 Note: MediaPipe works best with Python 3.10 on Windows
