@@ -113,7 +113,7 @@ pip3 install -r requirements.txt
 Mac M1/M2/M3 users only — enable GPU:
 
 pip3 install tensorflow-macos tensorflow-metal
-```
+
 ## 🪟 Windows Setup
 cd ASL_PROJECT
 pip install -r requirements.txt
