@@ -1,31 +1,44 @@
+✅ COPY FROM BELOW AND REPLACE YOUR README
+# ✋ Real-Time Sign Language Detection (A–Z & 0–9)
 
-# ✌️ Sign Language Detection (A–Z, 0–9) — Real-Time | Deep Learning
+This project detects **American Sign Language (ASL)** hand signs (A–Z & 0–9) in **real-time** using your laptop webcam and converts them into text.
 
-A real-time Sign Language recognition system that detects **A–Z alphabets and 0–9 digits** from a webcam and converts them into text.
-
-Built by **Anshuman Mathur** using Deep Learning + Computer Vision.
+Made by **Anshuman Mathur**  
+B.Tech CSE | AI & ML Enthusiast
 
 ---
 
-## 🧠 Tech Stack
+## 🎥 Demo Preview (What it Does)
 
-| Component | Technology |
+- You show a hand sign in front of webcam
+- The system recognizes the sign
+- Converts it into text
+- You can build words using SPACE & DELETE
+
+Perfect for learning ASL & building real-time AI apps!
+
+---
+
+## 🧠 Tech Used
+
+| Component | Tech |
 |---|---|
 Model | MobileNetV2 (Transfer Learning)
-Framework | TensorFlow / TensorFlow-Metal (Mac M-Series GPU)
-Vision | OpenCV + MediaPipe
-Language | Python
-Input | Laptop Webcam
+Framework | TensorFlow (TensorFlow-Metal on M-series Mac)
+Camera Processing | OpenCV
+Hand Tracking | MediaPipe
+Language | Python 3.10
 
 ---
 
-## 🚀 Features
+## ✨ Features
 
-✅ Real-time hand sign detection  
 ✅ Recognizes **A–Z** and **0–9**  
-✅ Works on **Mac & Windows**  
-✅ Train with your own images  
-✅ Custom fine-tuning for accuracy  
+✅ Works in **real time**  
+✅ Webcam input  
+✅ Includes **custom dataset collected by me**  
+✅ Train model yourself (optional)  
+✅ Works on **Mac & Windows**
 
 ---
 
@@ -101,14 +114,13 @@ Mac M1/M2/M3 users only — enable GPU:
 
 pip3 install tensorflow-macos tensorflow-metal
 ```
-```bash
-🪟 Windows Setup
+## 🪟 Windows Setup
 cd ASL_PROJECT
 pip install -r requirements.txt
 
 
 ✅ Use Python 3.10 (MediaPipe works best)
-```
+
 ▶️ Run Real-Time Sign Detection
 python3 scripts/realtime.py
 
