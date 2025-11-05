@@ -32,7 +32,7 @@ Input | Laptop Webcam
 ## 📂 Project Folder Structure
 
 
-
+```
 ASL_PROJECT/
 │
 ├── models/
@@ -46,7 +46,7 @@ ASL_PROJECT/
 │
 ├── requirements.txt
 └── README.md
-
+```
 
 > ⚠️ YOU MUST create this dataset folder manually:
 
@@ -67,7 +67,7 @@ a/ b/ c/ ... z/ 0/ 1/ ... 9/
 ## 📥 Download Dataset
 
 Google Drive Dataset Link 👇  
-👉 **(Paste your Google Drive link here)**
+👉 **((https://drive.google.com/file/d/1RVGx7QP0sXF_VVaME9N6bFoIjFn8niTb/view?usp=sharing))**
 
 ### Steps:
 
@@ -130,5 +130,5 @@ python3 scripts/train.py
 Anshuman Mathur
 B.Tech CSE | AI & ML Enthusiast
 
-LinkedIn: (Add your link here)
+LinkedIn: ((https://www.linkedin.com/in/anshuumaan-mathur-35746b261/))
 
