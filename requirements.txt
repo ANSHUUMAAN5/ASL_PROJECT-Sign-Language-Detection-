@@ -1,0 +1,10 @@
+tensorflow==2.12.0
+tensorflow-macos; sys_platform == "darwin"
+tensorflow-metal; sys_platform == "darwin"
+opencv-python
+mediapipe
+numpy==1.23.5
+pillow
+matplotlib
+scikit-learn
+tqdm
