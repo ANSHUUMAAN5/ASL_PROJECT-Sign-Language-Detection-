@@ -31,7 +31,7 @@ line_spec = mp_draw.DrawingSpec(color=(0,150,255), thickness=2)
 
 # TTS ENGINE
 engine = pyttsx3.init()
-engine.setProperty("rate", 170)  # smooth speed
+engine.setProperty("rate", 170)  
 engine.setProperty("volume", 1.0)
 
 def speak(text):
@@ -46,8 +46,8 @@ last_letter = ""
 lock = False
 confidence_queue = deque(maxlen=8)
 
-spoken_letter = ""  # avoid repeating voice
-spoken_word = ""    # avoid repeating on space
+spoken_letter = ""  
+spoken_word = ""    
 
 print("SPACE=space, D=delete, Q=quit")
 
@@ -92,7 +92,7 @@ while True:
                         buffer += pred_letter
                         lock = True
 
-                        # 🔊 Speak the confirmed letter (only once)
+                        
                         if spoken_letter != pred_letter:
                             speak(pred_letter)
                             spoken_letter = pred_letter
@@ -102,7 +102,7 @@ while True:
                     lock = False
                     spoken_letter = ""  # reset
 
-        # UI - landmarks + box + text
+        
         mp_draw.draw_landmarks(frame, lm,
                                mp.solutions.hands.HAND_CONNECTIONS,
                                dot_spec, line_spec)
