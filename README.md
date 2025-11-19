@@ -1,3 +1,10 @@
+![Python](https://img.shields.io/badge/Python-3.10-blue)
+![TensorFlow](https://img.shields.io/badge/TensorFlow-2.12-orange)
+![OpenCV](https://img.shields.io/badge/OpenCV-Computer%20Vision-green)
+![MediaPipe](https://img.shields.io/badge/MediaPipe-Hand%20Tracking-yellow)
+![Platform](https://img.shields.io/badge/Platform-Mac%20%7C%20Windows-lightgrey)
+![License](https://img.shields.io/badge/License-MIT-green)
+
 # ✌️ Sign Language Detection (A–Z, 0–9) — Real-Time | Deep Learning
 
 A real-time Sign Language recognition system that detects **A–Z alphabets and 0–9 digits** from a webcam and converts them into text.
