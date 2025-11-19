@@ -36,7 +36,7 @@ while True:
         cv2.putText(frame, f"Capturing: {CLASS} {count}", (10,30), cv2.FONT_HERSHEY_SIMPLEX, 1,(255,0,0),2)
 
         key = cv2.waitKey(1) & 0xFF
-        if key == ord(' '):  # space to save
+        if key == ord(' '):  
             if hand.size > 0:
                 cv2.imwrite(os.path.join(SAVE_PATH, f"{CLASS}_{count}.jpg"), hand)
                 count += 1
